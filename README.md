@@ -1,6 +1,8 @@
 # ContosoTides
 On-Device Mobile Inferencing Using CoreML, Tensorflow Android Inference, and Xamarin.Forms
 
+Companion code for the article [Delivering On-Device AI Solutions Using Xamarin, CoreML, and Tensorflow Android Inference](tk)
+
 This is an example program showing the delivery of a Tensorflow-trained LSTM on both iOS, using CoreML, and Android, using Tensorflow Android Inference. 
 
 ![](images/Figure4.png)
