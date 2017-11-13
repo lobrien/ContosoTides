@@ -1,4 +1,4 @@
-# ContosoTides
+# Contoso Tides
 On-Device Mobile Inferencing Using CoreML, Tensorflow Android Inference, and Xamarin.Forms
 
 Companion code for the article [Delivering On-Device AI Solutions Using Xamarin, CoreML, and Tensorflow Android Inference](tk)
@@ -11,3 +11,4 @@ This Visual Studio for Mac solution contains all necessary files, including the 
 
 The `/training` directory contains data and Python sources for recreating the model and converting/saving the Keras code into CoreML and Tensorflow protobuf format. 
 
+Just in case it needs to be made explicit: Under no circumstances should you use the data or model here for planning or navigation!
