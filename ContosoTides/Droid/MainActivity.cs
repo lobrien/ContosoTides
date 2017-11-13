@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ContosoTides4.Droid;
 
 namespace ContosoTides.Droid
 {

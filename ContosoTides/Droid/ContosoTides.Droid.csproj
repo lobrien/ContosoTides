@@ -126,13 +126,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AndroidTides\AndroidTides\TensorFlowXamarin\TensorFlowXamarin.csproj">
-      <Project>{3A2B80FA-2108-4436-952F-F9BDD7B3C58A}</Project>
-      <Name>TensorFlowXamarin</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ContosoTides.csproj">
       <Project>{1338B060-D036-4055-B511-E69506BE0378}</Project>
       <Name>ContosoTides</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TensorFlowXamarin\TensorFlowXamarin.csproj">
+      <Project>{1557F11A-244E-4DCF-BB90-B01C916E84E8}</Project>
+      <Name>TensorFlowXamarin</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
