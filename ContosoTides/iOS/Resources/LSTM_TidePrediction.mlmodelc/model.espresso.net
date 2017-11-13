@@ -1,0 +1,77 @@
+{
+  "storage" : "model.espresso.weights",
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "layers" : [
+    {
+      "input_size" : 1,
+      "arch" : 1,
+      "hidden_size" : 128,
+      "nonlinearity_alpha" : 1,
+      "nonlinearity_bidir_type" : 0,
+      "coupled_input_forget" : 0,
+      "lstm_forget_bias" : 1,
+      "bias_vector_flag" : 1,
+      "mode" : 0,
+      "cell_clip_threshold" : 50000,
+      "type" : "rnn_arch",
+      "internal_nonlinearity_second_beta" : 1,
+      "internal_nonlinearity_alpha" : 1,
+      "internal_nonlinearity_beta" : 1,
+      "forget_bias" : 0,
+      "weights" : {
+        "W_h" : 1,
+        "W_x" : 3,
+        "b" : 5
+      },
+      "lstm_has_peepholes" : 0,
+      "beta" : 1,
+      "quantization_mode" : 0,
+      "name" : "lstm_1",
+      "top" : "lstm_1_output,lstm_1_h_out,lstm_1_c_out",
+      "alpha" : 1,
+      "max_batch_size" : 1,
+      "nonlinearity_bidir_alpha" : 1,
+      "nonlinearity_beta" : 1,
+      "internal_nonlinearity_second_alpha" : 1,
+      "encoder_bidirectional_mode" : 0,
+      "internal_nonlinearity_type" : 3,
+      "bottom" : "readings,lstm_1_h_in,lstm_1_c_in",
+      "nonlinearity_type" : 0,
+      "nonlinearity_bidir_beta" : 1,
+      "encoder_output_sequence" : 0,
+      "internal_nonlinearity_second_type" : 0
+    },
+    {
+      "nB" : 128,
+      "top" : "dense_1_output",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 100,
+      "blob_weights" : 9,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "lstm_1_output",
+      "blob_biases" : 7,
+      "has_tanh" : 0,
+      "name" : "dense_1",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 1,
+      "bottom" : "dense_1_output",
+      "weights" : {
+
+      },
+      "mode" : 6,
+      "top" : "predicted_tide_ft",
+      "type" : "activation",
+      "name" : "activation_1",
+      "beta" : 0
+    }
+  ]
+}
